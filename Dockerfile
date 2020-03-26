@@ -10,6 +10,8 @@ RUN yum install -y java-1.8.0-openjdk-devel
 RUN yum install -y https://downloads.lightbend.com/scala/2.12.7/scala-2.12.7.rpm
 RUN yum install -y https://dl.bintray.com/sbt/rpm/sbt-1.2.8.rpm
 
+RUN yum install -y git curl wget
+
 ADD . /code
 WORKDIR /code
 
